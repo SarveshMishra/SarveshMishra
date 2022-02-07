@@ -1,0 +1,22 @@
+{
+  "name": "sarveshmishra-profile",
+  "version": "1.0.0",
+  "description": "This is a sarvesh mishra github profile page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarveshMishra/SarveshMishra.git"
+  },
+  "author": "Sarvesh Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarveshMishra/SarveshMishra/issues"
+  },
+  "homepage": "https://github.com/SarveshMishra/SarveshMishra#readme",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
+}

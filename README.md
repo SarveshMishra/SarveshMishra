@@ -1,1 +1,4 @@
-My name is Sarvesh Mishra and today is Monday, February 7, 11:29 AM GMT+5:30.
+<h1><img src="./public/blob-wave.gif" width="30"/>  Hi There! Good to see you.</h1>
+
+
+<p>Welcome to my page! </br> I'm Sarvesh, Fullstack developer from <img src="./public/india.png" width="13"/> <b>Prayagraj, India</b>. </p>

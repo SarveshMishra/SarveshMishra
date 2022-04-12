@@ -2,6 +2,9 @@
 
 <p>Welcome to my page! </br> I'm Sarvesh, Fullstack developer from <img src="./public/india.png" width="13"/> <b>Prayagraj, India</b>. </p>
 
+## Socials
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sarveshm) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@sarveshworld) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/sarveshworld) 
+
 <h2>Things I code with...</h2>
 <p>
 <img alt="Javascript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white" />
@@ -29,3 +32,12 @@
 <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/0" alt="First Recent Article"> 
 <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/1"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/1" alt="Second Recent Article"> 
 <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/2"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/2" alt="Third Recent Article"> 
+
+
+
+
+
+  [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/sarveshmishra) 
+
+  <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+  

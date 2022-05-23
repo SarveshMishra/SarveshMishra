@@ -2,6 +2,8 @@
 
 <p>Welcome to my page! </br> I'm Sarvesh, Fullstack developer from <img src="./public/india.png" width="13"/> <b>Prayagraj, India</b>. </p>
 
+[Resume](https://drive.google.com/file/d/1Z9Bya4GoDxj3q67CADwp6vzFxslG4G-z/view?usp=sharing)
+
 ## Socials
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sarveshm) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@sarveshworld) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/sarveshworld) 
 

@@ -6,7 +6,7 @@
 
 ## Socials
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/sarveshm) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@sarveshworld) [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/sarveshworld)
-[![wakatime](https://wakatime.com/badge/user/e492d8cc-689d-4bb7-83e6-705d007545ec.svg)](https://wakatime.com/@e492d8cc-689d-4bb7-83e6-705d007545ec)
+
 
 <h2>Things I code with...</h2>
 <p>

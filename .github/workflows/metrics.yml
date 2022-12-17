@@ -139,6 +139,7 @@ jobs:
           template: classic
           base: repositories
           config_timezone: ${{ secrets.USER_TIMEZONE }}
+          
   wakatime:
     runs-on: ubuntu-latest
     steps:

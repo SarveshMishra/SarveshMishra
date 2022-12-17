@@ -139,7 +139,7 @@ jobs:
           template: classic
           base: repositories
           config_timezone: ${{ secrets.USER_TIMEZONE }}
-          
+
   wakatime:
     runs-on: ubuntu-latest
     steps:
@@ -148,14 +148,9 @@ jobs:
           filename: wakatime.svg
           # You'll need to setup a personal token in your secrets.
           token: NOT_NEEDED
+          base: ''
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          # Options
-          user: sarveshmishra
-          template: classic
-          base: repositories
-          config_timezone: ${{ secrets.USER_TIMEZONE }}

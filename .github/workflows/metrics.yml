@@ -18,7 +18,7 @@ jobs:
           user: sarveshmishra
           base: achievements
           plugin_achievements: yes
-          plugin_achievements_threshold: B # Display achievements with rank B or higher
+          plugin_achievements_threshold: A # Display achievements with rank B or higher
           plugin_achievements_secrets: yes # Display unlocked secrets achievements
           plugin_achievements_display: compact # Use compact display
           plugin_achievements_limit: 0 # Display all unlocked achievements (no limit)
@@ -50,6 +50,33 @@ jobs:
           base: 'repositories'
           plugin_lines: yes
 
+  github-metrics_org:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: header_org.svg
+          # You'll need to setup a personal token in your secrets.
+          token: ${{ secrets.METRICS_SECRET_CW_SARVESH }}
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Options
+          user: cw-sarvesh
+          template: classic
+          base: header
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+  lines:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: lines-of-code_org.svg
+          token: ${{ secrets.METRICS_SECRET_CW_SARVESH }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: 'repositories'
+          plugin_lines: yes
+
   acti_comm:
     runs-on: ubuntu-latest
     steps:
@@ -63,6 +90,23 @@ jobs:
 
           # Options
           user: sarveshmishra
+          template: classic
+          base: activity, community
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+
+  acti_comm_org:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: acti_comm_org.svg
+          # You'll need to setup a personal token in your secrets.
+          token: ${{ secrets.METRICS_SECRET_CW_SARVESH }}
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Options
+          user: cw-sarvesh
           template: classic
           base: activity, community
           config_timezone: ${{ secrets.USER_TIMEZONE }}
@@ -104,6 +148,24 @@ jobs:
           plugin_habits_charts: yes # Display charts section
           plugin_habits_trim: yes # Trim unused hours on daily chart
 
+  habits_org:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-habits_org.svg
+          token: ${{ secrets.METRICS_SECRET_CW_SARVESH }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
+          user: cw-sarvesh
+          base: ''
+          template: classic
+          plugin_habits: yes
+          plugin_habits_from: 200 # Use 200 events to compute habits
+          plugin_habits_days: 14 # Keep only events from last 14 days
+          plugin_habits_charts: yes # Display charts section
+          plugin_habits_trim: yes # Trim unused hours on daily chart
+
   issue_pr_lang:
     runs-on: ubuntu-latest
     steps:
@@ -123,6 +185,25 @@ jobs:
           plugin_followup: yes
           plugin_languages: yes
 
+  issue_pr_lang_org:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: issue_pr_lang_org.svg
+          # You'll need to setup a personal token in your secrets.
+          token: ${{ secrets.METRICS_SECRET_CW_SARVESH }}
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Options
+          user: cw-sarvesh
+          template: classic
+          base: ''
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          plugin_followup: yes
+          plugin_languages: yes
+
   repositories:
     runs-on: ubuntu-latest
     steps:
@@ -136,6 +217,23 @@ jobs:
 
           # Options
           user: sarveshmishra
+          template: classic
+          base: repositories
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+
+  repositories_org:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: repositories_org.svg
+          # You'll need to setup a personal token in your secrets.
+          token: ${{ secrets.METRICS_SECRET_CW_SARVESH }}
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Options
+          user: cw-sarvesh
           template: classic
           base: repositories
           config_timezone: ${{ secrets.USER_TIMEZONE }}

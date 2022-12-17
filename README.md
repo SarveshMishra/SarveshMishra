@@ -1,3 +1,20 @@
+<table>
+<tr>
+    <th align="center">For user accounts</th>
+    <th align="center">For organization accounts</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img alt="" width="400" src="./header.svg" alt=""></img>
+    <img alt="" width="400" src="./repositories.svg" alt=""></img>
+    </td>
+    <td align="center">
+    <img alt="" width="400" src="./repositories.svg" alt=""></img>
+    </td>
+
+  </tr>
+  </tr>
+</table>
 <a href="https://github.com/sarveshmishra">
   <img align="center" width="49%" src="./header.svg" />
 </a>

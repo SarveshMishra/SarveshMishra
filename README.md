@@ -16,6 +16,9 @@
 <a href="https://github.com/sarveshmishra">
     <img align="center" width="49%" src="./issue_pr_lang.svg" />
 </a>
+<a href="https://wakatime.com/@SarveshMishra">
+    <img align="center" width="49%" src="./wakatime.svg" />
+</a>
 
 <a href="https://github.com/sarveshmishra">
   <img align="center" width="49%" src="./github-habits.svg" />

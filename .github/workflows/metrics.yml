@@ -1,13 +1,12 @@
 name: Metrics
 on:
   # Schedule updates (each hour)
-  schedule: [{cron: "0 * * * *"}]
+  schedule: [{ cron: '0 * * * *' }]
   # Lines below let you run workflow manually and on each commit (optional)
   workflow_dispatch:
-  push: {branches: ["main"]}
+  push: { branches: ['main'] }
 
 jobs:
-
   achievements:
     runs-on: ubuntu-latest
     steps:
@@ -19,10 +18,10 @@ jobs:
           user: sarveshmishra
           base: achievements
           plugin_achievements: yes
-          plugin_achievements_threshold: B      # Display achievements with rank B or higher
-          plugin_achievements_secrets: yes      # Display unlocked secrets achievements
-          plugin_achievements_display: compact  # Use compact display
-          plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
+          plugin_achievements_threshold: B # Display achievements with rank B or higher
+          plugin_achievements_secrets: yes # Display unlocked secrets achievements
+          plugin_achievements_display: compact # Use compact display
+          plugin_achievements_limit: 0 # Display all unlocked achievements (no limit)
 
   github-metrics:
     runs-on: ubuntu-latest
@@ -48,7 +47,7 @@ jobs:
           filename: lines-of-code.svg
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: "repositories"
+          base: 'repositories'
           plugin_lines: yes
 
   acti_comm:
@@ -82,7 +81,7 @@ jobs:
           # Options
           user: sarveshmishra
           template: classic
-          base: ""
+          base: ''
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
@@ -97,13 +96,13 @@ jobs:
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
           user: sarveshmishra
-          base: ""
+          base: ''
           template: classic
           plugin_habits: yes
-          plugin_habits_from: 200       # Use 200 events to compute habits
-          plugin_habits_days: 14        # Keep only events from last 14 days
-          plugin_habits_charts: yes     # Display charts section
-          plugin_habits_trim: yes       # Trim unused hours on daily chart
+          plugin_habits_from: 200 # Use 200 events to compute habits
+          plugin_habits_days: 14 # Keep only events from last 14 days
+          plugin_habits_charts: yes # Display charts section
+          plugin_habits_trim: yes # Trim unused hours on daily chart
 
   issue_pr_lang:
     runs-on: ubuntu-latest
@@ -119,11 +118,10 @@ jobs:
           # Options
           user: sarveshmishra
           template: classic
-          base: ""
+          base: ''
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_followup: yes
           plugin_languages: yes
-
 
   repositories:
     runs-on: ubuntu-latest
@@ -136,6 +134,25 @@ jobs:
           # GITHUB_TOKEN is a special auto-generated token used for commits
           committer_token: ${{ secrets.GITHUB_TOKEN }}
 
+          # Options
+          user: sarveshmishra
+          template: classic
+          base: repositories
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
+  wakatime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: wakatime.svg
+          # You'll need to setup a personal token in your secrets.
+          token: NOT_NEEDED
+          # GITHUB_TOKEN is a special auto-generated token used for commits
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           # Options
           user: sarveshmishra
           template: classic

@@ -25,7 +25,8 @@
     <img align="center" width="49%" src="./achievements.svg" />
 </a>
 
-<h2>Recent Blog Posts</h2>
+<h2>Recent Blog Posts <a href="https://sarvesh.xyz/blog">For More...</a></h2>
+
 <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/0" alt="First Recent Article"> 
 <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/1"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/1" alt="Second Recent Article"> 
 <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/2"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/2" alt="Third Recent Article">

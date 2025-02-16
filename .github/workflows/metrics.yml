@@ -280,7 +280,7 @@ jobs:
           base: repositories
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
-  wakatime:
+  extras:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
@@ -294,3 +294,16 @@ jobs:
           plugin_wakatime: yes
           plugin_wakatime_sections: time, languages, languages-graphs, editors,editors-graphs, os
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: leetcode.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_leetcode_user: SarveshMishra
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
+
+
+
+

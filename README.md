@@ -89,6 +89,10 @@
 
 
 
+<a href="https://leetcode.com/u/SarveshMishra/">
+    <img align="center" width="49%" src="./leetcode.svg" />
+</a>
+</br>
 <a href="https://wakatime.com/@SarveshMishra">
     <img align="center" width="49%" src="./wakatime.svg" />
 </a>

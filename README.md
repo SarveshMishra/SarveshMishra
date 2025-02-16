@@ -5,10 +5,11 @@
 <a href="https://github.com/sarveshmishra">
   <img align="center" width="49%" src="./repositories.svg" />
 </a>
+</br>
+<h4>Information from the Organizational Account.</h4>
 <a href="https://github.com/sarveshmishra">
   <img align="center" width="49%" src="./acti_comm.svg" />
 </a>
-
 <a href="https://wakatime.com/@SarveshMishra">
     <img align="center" width="49%" src="./wakatime.svg" />
 </a>

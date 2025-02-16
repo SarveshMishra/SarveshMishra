@@ -15,7 +15,7 @@
 <a href="https://github.com/sarveshmishra">
     <img align="center" width="49%" src="./issue_pr_lang.svg" />
 </a>
-<a href="https://github.com/sarveshmishra">
+<a href="https://github.com/cw-sarvesh">
   <img align="center" width="49%" src="./iso_calender.svg" />
 </a>
 <a href="https://github.com/sarveshmishra">

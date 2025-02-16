@@ -85,7 +85,22 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+          
+  calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: calender.svg
+          # You'll need to set up a personal token in your secrets.
+          token: ${{ secrets.METRICS_SECRET }}
 
+          # Options
+          user: sarveshmishra
+          template: classic
+          base: ''
+          plugin_calendar: yes
+          
   habits:
     runs-on: ubuntu-latest
     steps:

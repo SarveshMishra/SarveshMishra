@@ -87,17 +87,6 @@
 
 
 
-
-
-<a href="https://leetcode.com/u/SarveshMishra/">
-    <img align="center" width="49%" src="./leetcode.svg" />
-</a>
-</br>
-<a href="https://wakatime.com/@SarveshMishra">
-    <img align="center" width="49%" src="./wakatime.svg" />
-</a>
-
-
 <h2>Recent Blog Posts <a href="https://sarvesh.xyz/blog">For More...</a></h2>
 
 <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@sarveshworld/0" alt="First Recent Article">
